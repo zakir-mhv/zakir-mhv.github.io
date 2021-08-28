@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(gray), to(white));
+  background-image: linear-gradient(to right bottom, gray, white);
+  font-family: Roboto, sans-serif;
+}
+
+#navicon {
+  position: fixed;
+  top: 1rem;
+  right: 0.6rem;
+  font-size: 2rem;
+  color: #464445;
+  z-index: 2;
+}
+
+.wrapper {
+  width: 80%;
+  background-color: #464445;
+  -webkit-box-shadow: 0 4px 16px 0 #464445;
+          box-shadow: 0 4px 16px 0 #464445;
+}
+
+.section-heading-color {
+  color: white;
+  letter-spacing: 0.1rem;
+}
+
+#home #home-content {
+  background-image: url("assets/home/bg.jpg");
+  background-size: cover;
+  background-position: left;
+}
+
+#home .home-title {
+  margin-top: 10rem;
+  margin-left: 3rem;
+  width: 75%;
+  height: 75%;
+}
+
+#home .home-title h1 {
+  color: white;
+  font-weight: bold;
+}
+
+#home .home-title h3 {
+  color: #e7db2f;
+  font-weight: bold;
+}
+
+#home .home-title h6 {
+  margin-top: 7rem;
+  color: darkgray;
+}
+
+#home .home-nav {
+  line-height: 1rem;
+  background-color: #e7db2f;
+  font-family: "DM Serif Text", serif;
+  width: 25%;
+  height: 100%;
+}
+
+#home .home-nav ul {
+  margin: 10rem 0 3rem 1rem;
+}
+
+#home .home-nav ul li {
+  letter-spacing: 0.15rem;
+}
+
+#home .home-nav ul li .active {
+  margin-right: 1rem;
+  background-color: #464445;
+  color: white;
+  font-weight: normal;
+  border-radius: 0.5rem;
+}
+
+#home .home-nav ul a {
+  color: black;
+  font-weight: bold;
+}
+
+#skills .list-group-width {
+  width: 25%;
+}
+
+#projects .card-width {
+  width: 15rem;
+}
+
+#projects .card-body-height {
+  height: 11rem;
+}
+
+#projects .list-group-height {
+  height: 8.3rem;
+}
+
+#projects .bgCard {
+  background-color: Khaki;
+}
+
+#about .about-img {
+  width: 25%;
+}
+
+#about .about-txt {
+  width: 75%;
+}
+
+#about .about-txt span {
+  color: gold;
+}
+
+#contact .email-style {
+  font-size: 2rem;
+  color: #e7db2f;
+}
+
+#contact .email-style:hover {
+  text-decoration: none;
+  color: gray;
+}
+
+#contact .social-style {
+  font-size: 1.5rem;
+  color: #e7db2f;
+}
+
+#contact .social-style:hover {
+  text-decoration: none;
+  color: gray;
+}
+
+@media screen and (max-width: 992px) {
+  #nav-menu-icon {
+    display: block;
+  }
+  #home #home-content {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  #home .home-title {
+    height: 50vh;
+  }
+  #home .home-title h1 {
+    font-size: 2rem;
+  }
+  #home .home-title h3 {
+    font-size: 1rem;
+  }
+  #home .home-nav {
+    position: fixed;
+    top: 0;
+    left: -200%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100% !important;
+    width: 100% !important;
+    z-index: 1;
+  }
+  #home .home-nav ul {
+    margin: 0;
+  }
+  #home .home-nav ul li a {
+    font-size: 1rem;
+  }
+  #home .home-nav-toggle {
+    left: 0;
+  }
+  #skills .list-group-width {
+    width: 75%;
+  }
+  #about .about-img {
+    width: 50%;
+  }
+  #about .about-txt {
+    width: 83%;
+  }
+  #contact .email-style {
+    font-size: 1.2rem;
+  }
+  #contact .social-style {
+    font-size: 1rem;
+  }
+}
